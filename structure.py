@@ -55,11 +55,11 @@ def type_test(data, structure):
     else False
 
     Example:
-        data_a = [{'nyckel': 1}, 1, 2, 'three', 4]
-        structure_a = [{'nyckel': int}, int, int, int, int]
+        DATA_A = [{'nyckel': 1}, 1, 2, 'three', 4]
+        STRUCTURE_A = [{'nyckel': int}, int, int, int, int]
 
-        data_b = {'key': [1, 'string', 3], 'key2': {'key3': 1}}
-        structure_b = {'key': [int, str, int], 'key2': {'key3': int}}
+        DATA_B = {'key': [1, 'string', 3], 'key2': {'key3': 1}}
+        STRUCTURE_B = {'key': [int, str, int], 'key2': {'key3': int}}
 
         case a: Will return False
         case b: Will return True
@@ -83,11 +83,11 @@ def type_test(data, structure):
 
 
 if __name__ == '__main__':
-    data_a = [{'nyckel': 1}, 1, 2, 'three', 4]
-    structure_a = [{'nyckel': int}, int, int, int, int]
+    DATA_A = [{'nyckel': 1}, 1, 2, 'three', 4]
+    STRUCTURE_A = [{'nyckel': int}, int, int, int, int]
 
-    data_b = {'key': [1, 'string', 3], 'key2': {'key3': 1}}
-    structure_b = {'key': [int, str, int], 'key2': {'key3': int}}
+    DATA_B = {'key': [1, 'string', 3], 'key2': {'key3': 1}}
+    STRUCTURE_B = {'key': [int, str, int], 'key2': {'key3': int}}
 
-    print(type_test(data_a, structure_a))
-    print(type_test(data_b, structure_b))
+    print(type_test(DATA_A, STRUCTURE_A))
+    print(type_test(DATA_B, STRUCTURE_B))
